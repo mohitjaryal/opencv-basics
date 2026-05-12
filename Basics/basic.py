@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Read image
-img = cv2.imread("./img/nature.jpg")
+img = cv2.imread("../img/nature.jpg")
 
 if img is None:
     print("Error: Image not found. Check the file path.")

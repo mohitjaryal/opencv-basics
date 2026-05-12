@@ -1,7 +1,7 @@
 import cv2
 import  numpy as np
 
-img = cv2.imread('./img/nature.jpg')
+img = cv2.imread('../img/nature.jpg')
 
 crop_img = False
 current_x = -1

@@ -3,7 +3,7 @@ import  numpy as np
 import matplotlib.pyplot as plt
 
 # read image
-img = cv2.imread("./img/nature.jpg")
+img = cv2.imread("../img/nature.jpg")
 
 # image
 imgBlue = img[:,:,0]

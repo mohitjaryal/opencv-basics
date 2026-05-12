@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Read image
-img = cv2.imread('./img/nature.jpg')
+img = cv2.imread('../img/nature.jpg')
 
 # Mouse event function
 def draw(event, x, y, flags, param):

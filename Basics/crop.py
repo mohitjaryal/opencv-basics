@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # reading image
-img = cv2.imread('./img/nature.jpg')
+img = cv2.imread('../img/nature.jpg')
 
 # the left top part of an image is it's origin
 
