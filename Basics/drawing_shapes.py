@@ -1,7 +1,6 @@
 # drawing shapes
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
 
 # creating an image
 img = np.zeros((512,512,3))
