@@ -52,7 +52,7 @@ cd opencv-basics
 ### Run Any Script
 
 ```bash
-python basic.py
+python gaussianBlur.py
 python cropping_tool.py
 python live_direct_drawing.py
 # ...and so on
