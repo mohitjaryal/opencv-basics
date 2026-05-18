@@ -14,22 +14,70 @@
 ```
 opencv-basics/
 │
-├── basic.py                  # Reading, displaying & saving images
-├── save_image.py             # Saving processed images to disk
-├── resize.py                 # Resizing images
-├── crop.py                   # Cropping a region from an image
-├── cropping_tool.py          # Interactive mouse-based cropping tool
-├── flip_image.py             # Flipping images (horizontal / vertical / both)
-├── drawing_shapes.py         # Drawing lines, circles, rectangles & text
-├── streached_rectangle.py    # Drawing stretched/custom rectangles
-├── working_with_rgb.py       # Exploring and manipulating color channels
-├── playing_video.py          # Playing a video file using OpenCV
-├── record_video_using_webcam.py  # Recording video from webcam
-├── live_direct_drawing.py    # Drawing on live webcam feed in real-time
+├── Basics/                              # Core OpenCV basic concepts
+│   ├── basic.py                         # Reading and displaying images
+│   ├── crop.py                          # Cropping images
+│   ├── cropping_tool.py                 # Interactive cropping tool
+│   ├── drawing_shapes.py                # Drawing shapes on images
+│   ├── flip_image.py                    # Flipping images horizontally/vertically
+│   ├── live_direct_drawing.py           # Live drawing on webcam feed
+│   ├── nature_small.png                 # Sample image file
+│   ├── playing_video.py                 # Playing video files
+│   ├── record_video_using_webcam.py     # Recording video using webcam
+│   ├── resize.py                        # Resizing images
+│   ├── save_image.py                    # Saving images to disk
+│   ├── streached_rectangle.py           # Drawing stretched rectangles
+│   └── working_with_rgb.py             # Working with RGB color channels
 │
-└── nature_small.png          # Sample image used across scripts
+├── Bitwise-Operations/                  # Bitwise logical operations on images
+│   ├── bitwise_and.py                   # AND operation between two images
+│   ├── bitwise_not.py                   # NOT (invert) operation on image
+│   └── bitwise_or.py                    # OR operation between two images
+│
+├── Colors-Shape-Detection/              # Detecting colors and shapes
+│   └── contours.py                      # Finding and drawing contours in images
+│
+├── Drawing/                             # Drawing with OpenCV
+│   ├── addText.py                       # Adding text on images
+│   ├── circle.py                        # Drawing circles
+│   ├── line.py                          # Drawing lines
+│   └── rectangle.py                     # Drawing rectangles
+│
+├── Edge-Detection-and-Thresholding/     # Edge detection and thresholding techniques
+│   ├── CannyEdgeDetection.py            # Detecting edges using Canny algorithm
+│   └── thresholding.py                  # Applying binary thresholding on images
+│
+├── Face-Object-Detection/               # Face, eye and smile detection system
+│   ├── files/                           # Pre-trained Haar Cascade XML models
+│   │   ├── haarcascade_eye.xml          # Pre-trained model for eye detection
+│   │   ├── haarcascade_frontalcatface.xml  # Pre-trained model for face detection
+│   │   └── haarcascade_smile.xml        # Pre-trained model for smile detection
+│   └── face_detection.py               # Main script for face, eye & smile detection
+│
+├── Image-Filtering-Process/             # Applying filters to images
+│   ├── Blur/                            # Blurring techniques
+│   │   ├── gaussianBlur.py              # Applying Gaussian blur
+│   │   └── meidanBlur.py               # Applying Median blur
+│   └── Sharpening/                      # Sharpening techniques
+│       └── basicSharpening.py           # Sharpening images using kernels
+│
+├── Practice-Questions/                  # Practice exercises
+│   ├── gray_nature.png                  # Sample grayscale image for practice
+│   ├── drawShapes.py                    # Practice drawing shapes
+│   ├── flipImage.py                     # Practice flipping images
+│   ├── practice.py                      # General practice file
+│   ├── practice2.py                     # Advanced practice file
+│   ├── rotateImage.py                   # Practice rotating images
+│   └── videoCapture.py                  # Practice capturing video
+│
+├── Video-Processing-Workflow/           # Video processing concepts
+│   ├── basic.py                         # Basic video processing operations
+│   └── savingVideoFile.py              # Saving processed video to file
+│
+├── img/                                 # Images used throughout the project
+├── LICENSE                              # MIT License
+└── README.md                            # Project documentation
 ```
-
 ---
 
 ## 🚀 Getting Started
@@ -60,35 +108,22 @@ python live_direct_drawing.py
 
 ---
 
-## 📜 Script Descriptions
-
-| Script | Description |
-|---|---|
-| `basic.py` | Load and display an image using `cv2.imread` and `cv2.imshow` |
-| `save_image.py` | Save a modified image to disk using `cv2.imwrite` |
-| `resize.py` | Resize images to custom dimensions |
-| `crop.py` | Crop a specific region using NumPy slicing |
-| `cropping_tool.py` | Interactive tool — drag to select and crop a region |
-| `flip_image.py` | Flip images along horizontal, vertical, or both axes |
-| `drawing_shapes.py` | Draw lines, rectangles, circles, and add text overlays |
-| `streached_rectangle.py` | Draw filled or stretched rectangles for custom overlays |
-| `working_with_rgb.py` | Split and visualize individual RGB/BGR color channels |
-| `playing_video.py` | Read and play a video file frame-by-frame |
-| `record_video_using_webcam.py` | Capture and save video from your webcam |
-| `live_direct_drawing.py` | Draw shapes in real-time on a live webcam stream |
-
----
-
 ## 🧠 Concepts Covered
 
 - ✅ Image I/O (read, display, save)
-- ✅ Image transformations (resize, crop, flip)
+- ✅ Image transformations (resize, crop, flip, rotate)
 - ✅ Drawing on images (shapes, text, overlays)
 - ✅ Color channel manipulation (BGR / RGB)
+- ✅ Bitwise operations (AND, OR, NOT)
+- ✅ Contour detection and shape analysis
+- ✅ Edge detection (Canny algorithm)
+- ✅ Image thresholding (binary conversion)
+- ✅ Image filtering (Gaussian Blur, Median Blur, Sharpening)
 - ✅ Video playback and frame processing
 - ✅ Webcam capture and video recording
 - ✅ Mouse event handling for interactive tools
 - ✅ Real-time drawing on live video feed
+- ✅ Face, Eye & Smile detection (Haar Cascade)
 
 ---
 
@@ -115,4 +150,4 @@ python live_direct_drawing.py
 
 **⭐ If this repo helped you, consider giving it a star — it motivates me to keep learning and sharing!**
 
-*Made with 💙 by [Mohit Jaryal*](https://mohitjaryal.online)
+*Made by [Mohit Jaryal*](https://mohitjaryal.online)
